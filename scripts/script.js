@@ -3,6 +3,15 @@ document.addEventListener("DOMContentLoaded", function() {
     const carta = document.getElementById("carta");
     const iconoFlotante = document.getElementById("iconoFlotante");
 
+    const flowers = [
+        '../assets/flower1.png',
+        '../assets/flower2.png',
+        '../assets/flower3.png',
+        '../assets/flower4.png',
+        '../assets/flower5.png',
+        '../assets/flower6.png'
+      ];
+
     document.getElementById('container').addEventListener('click', function (event) {
         createFlower(event.clientX, event.clientY);
       });
@@ -44,19 +53,18 @@ document.addEventListener("DOMContentLoaded", function() {
   animarIcono();
 
   function createFlower(x, y) {
+    const randomIndex = Math.floor(Math.random() * flowers.length);
     const flower = document.createElement('div');
     flower.className = 'rose';
     flower.style.left = x + 'px'; // establecer la posición x
     flower.style.top = y + 'px'; // establecer la posición y
+    flower.innerHTML = `<img src="assets/${flowers[randomIndex]}" class="rose" alt="Flower">`;
     document.getElementById('container').appendChild(flower);
   
     gsap.from(flower, {
-      duration: 1,
-      width: 0, // ancho inicial
-      height: 0, // alto inicial
-      x: x, // posición inicial x
-      y: y, // posición inicial y
-      ease: "elastic.out(1, 0.3)" // efecto elástico
+        duration: 1,
+        scale: 0, // escala inicial
+        ease: "back.out(1.7)"
     });
   }
   

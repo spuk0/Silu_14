@@ -49,8 +49,7 @@ body {
 
   #iconoFlotante {
     position: relative;
-    width: 50px; /* ajusta el tamaño según tu icono */
-    height: 50px; /* ajusta el tamaño según tu icono */
+    width: 30px; /* ajusta el tamaño según tu icono */
     z-index: 1; /* asegúrate de que esté por debajo del contenido principal */
   }
   
@@ -58,7 +57,7 @@ body {
     position: absolute;
     width: 50px; /* ancho inicial */
     height: 50px; /* alto inicial */
-    background-image: url('../assets/sunflower.svg'); /* imagen de la rosa */
+    /*background-image: url('../assets/sunflower.svg');  imagen de la rosa */
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
