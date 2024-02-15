@@ -5,12 +5,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //Cargamos las flores
     const flowers = [
-        '../assets/flower1.png',
-        '../assets/flower2.png',
-        '../assets/flower3.png',
-        '../assets/flower4.png',
-        '../assets/flower5.png',
-        '../assets/flower6.png'
+        './assets/flower1.png',
+        './assets/flower2.png',
+        './assets/flower3.png',
+        './assets/flower4.png',
+        './assets/flower5.png',
+        './assets/flower6.png',
+        './assets/sunflower.svg'
     ];
 
     body.addEventListener('click', function(event) {
