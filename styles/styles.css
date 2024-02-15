@@ -6,7 +6,6 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
   }
   
   #carta {
@@ -15,7 +14,8 @@ body {
     width: 300px;
     background-color: #fff;
     border-radius: 10px;
-    padding: 20px;
+    padding: 5%;
+    margin: 5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
@@ -46,21 +46,13 @@ body {
     font-size: 16px;
     outline: none;
   }
-
-  #iconoFlotante {
-    position: relative;
-    width: 30px; /* ajusta el tamaño según tu icono */
-    z-index: 1; /* asegúrate de que esté por debajo del contenido principal */
-  }
   
   #rose, .rose{
     position: absolute;
     width: 50px; /* ancho inicial */
-    height: 50px; /* alto inicial */
-    /*background-image: url('../assets/sunflower.svg');  imagen de la rosa */
-    background-size: contain;
-    background-repeat: no-repeat;
     cursor: pointer;
+    margin: auto;
+    z-index: -1; /* Posiciona las flores detrás del contenido de la carta */
   }
   
   
